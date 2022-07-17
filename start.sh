@@ -59,6 +59,10 @@ then
 	
 else
 	echo "invalid url arg"
+	echo "indentified DB in use mongoDB"
+	export DB_TYPE=mongodb
+	export DB_MONGODB_CONNECTION_URL=$ARG_URL
+	
 fi
 
 # kickstart nodemation
